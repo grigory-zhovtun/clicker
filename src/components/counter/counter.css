@@ -1,0 +1,19 @@
+.Counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px auto;
+    width: 645px;
+    height: 223px;
+    background: #555B97;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 150px;
+    color: #FFFFFF;
+
+}
+
+.CounterDisable {
+    color: crimson;
+    opacity: 0.5;
+}
