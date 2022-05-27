@@ -1,8 +1,8 @@
 .App {
-  margin: 5% auto;
+  margin: 10px auto;
   box-sizing: border-box;
-  width: 770px;
-  height: 599px;
+  width: 650px;
+  height: 550px;
   border: 7px solid #555B97;
   filter: drop-shadow(7px 7px 25px rgba(0, 0, 0, 0.25));
   border-radius: 15px;
@@ -11,16 +11,22 @@
 }
 
 .ButtonsWrapper {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
   align-items: center;
-
   margin: 0 auto;
   box-sizing: border-box;
-  width: 645px;
-  height: 215px;
+  width: 550px;
+  height: 224px;
   border: 7px solid #555B97;
   border-radius: 15px;
+}
+
+.IncrDecrButtons {
+  justify-self: center;
+  align-self: center;
+  margin-right: 12px;
+  
 }
 
 .Button {
@@ -47,4 +53,34 @@
 
 .DisableButton {
   opacity: 0.5;
+}
+
+.IncrementButton {
+  margin-bottom: 15px;
+}
+
+.InputsWrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.MinInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.MaxInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Labels {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  color: #555B97;
 }

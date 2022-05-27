@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     margin: 45px auto;
-    width: 645px;
-    height: 223px;
+    width: 550px;
+    height: 180px;
     background: #555B97;
     border-radius: 15px;
     font-weight: 700;
@@ -16,4 +16,15 @@
 .CounterDisable {
     color: crimson;
     opacity: 0.5;
+}
+
+.ErrorMessage {
+    font-weight: 400;
+    font-size: 60px;
+    background-color: #EF5151;
+}
+
+.InviteMessage {
+    font-weight: 400;
+    font-size: 60px;
 }

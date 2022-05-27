@@ -1,0 +1,20 @@
+.Input {
+    box-sizing: border-box;
+    width: 81px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #555B97;
+    border-radius: 15px;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555B97;
+}
+
+.ErrorInput {
+    background-color: #EF5151;
+    color: white;
+}
+

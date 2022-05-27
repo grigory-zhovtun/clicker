@@ -1,0 +1,25 @@
+.SetButton {
+    width: 66px;
+    height: 105px;
+    background: #555B97;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    align-self: center;
+    border: 0;
+}
+
+.SetButton:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.SetButton:hover {
+    background-color: #8590f5;
+}
+
+.SetButton svg {
+    margin-top: 15px;
+}
