@@ -1,5 +1,5 @@
 import './input.css'
-import {ChangeEvent} from "react";
+import {ChangeEvent, WheelEvent} from "react";
 
 type PropsType = {
     getCount: (num: number) => void
@@ -13,10 +13,19 @@ export const Input = ({getCount, error, currentValue}:PropsType) => {
         getCount(+e.currentTarget.value)
     }
 
+    const onWheelHandler = (e: WheelEvent) => {
+        if (e.deltaY < 0) {
+            currentValue ++
+        } else {
+            currentValue --
+        }
+    }
+
     return (
         <div>
             <input  value={+currentValue}
                     onChange={onChangeHandler}
+                    onWheel={onWheelHandler}
                     className={error ? "Input" + " ErrorInput": "Input"} type={"number"}/>
         </div>
     )
